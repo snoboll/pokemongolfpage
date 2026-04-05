@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #090f09;
+  --bg-2: #0d160d;
+  --card-bg: #111a11;
+  --card-hover: #172017;
+  --green: #5a9e5a;
+  --green-light: #a8d878;
+  --green-bright: #c8f078;
+  --green-dim: rgba(90, 158, 90, 0.15);
+  --green-dark: #1e3a1e;
+  --gold: #f59e0b;
+  --gold-light: #fbbf24;
+  --text: #ddeedd;
+  --text-muted: #6a8a6a;
+  --border: rgba(90, 158, 90, 0.2);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --heading-font: 'Russo One', system-ui, sans-serif;
+  --body-font: 'Chakra Petch', system-ui, sans-serif;
+  /* keep purple only for legendary/rare accents */
+  --purple: #7c3aed;
+  --purple-light: #a78bfa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--body-font);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
