@@ -1,16 +1,40 @@
-# React + Vite
+# Pokemon Golf – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing website for [Pokemon Golf](https://github.com/snoboll/pokemongolf), a mobile app that combines golf gameplay with Pokemon collection mechanics.
 
-Currently, two official plugins are available:
+## About the App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Every hole you play triggers a random Pokemon encounter. Your golf score determines your catch rate — shoot an eagle for a guaranteed catch, or struggle to hold on with a bogey. Build your Pokédex one round at a time across 23 Swedish golf courses.
 
-## React Compiler
+**Key features:**
+- 5 rarity tiers: Common, Uncommon, Rare, Epic, Legendary
+- Score-based catch rates (Eagle = 100%, Double Bogey = 10%)
+- Terrain modifiers — bunkers, water and rough affect encounter types
+- Legendary streaks for consecutive pars or better
+- 23 preset Swedish courses + custom course builder
+- Cloud sync via Supabase and global leaderboards
+- Available on iOS and Android
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/) + [Vite](https://vite.dev/)
+- [Lucide React](https://lucide.dev/) for icons
+- Plain CSS with custom properties
+- Pokemon artwork via [PokeAPI sprites](https://github.com/PokeAPI/sprites)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+> Pokémon and all related names are trademarks of Nintendo / Game Freak. This is a fan-made project.
